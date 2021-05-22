@@ -346,6 +346,10 @@ header {
   align-items: center;
 }
 
+.team-list-icon-box:not(:last-child) {
+  margin-right: 10px;
+}
+
 .team-list-icon-link {
   width: 44px;
   height: 44px;
