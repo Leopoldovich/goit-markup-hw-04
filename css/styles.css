@@ -160,12 +160,14 @@ header {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: var(--main-color);
 }
 
 .contact-header-list-icon-tel {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  fill: var(--main-color);
 }
 
 .active-open-link {
@@ -188,18 +190,20 @@ header {
 
 /* ********************************  hero  ****************************** */
 
-.hero-section {
-  max-width: 1600px;
+/* .hero-section {
   padding-top: 200px;
   padding-bottom: 200px;
+} */
+
+.hero-container {
+  text-align: center;
+  max-width: 1600px;
   background-size: cover;
   background-color: #c4c4c4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/hero-bg-Img.jpg');
-}
-
-.hero-container {
-  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-text {
@@ -244,6 +248,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
 }
 
 .feature-list-icon {
@@ -299,6 +305,10 @@ header {
 
 /* ********************************  team  ****************************** */
 
+.team-section {
+  background-color: #f5f4fa;
+}
+
 .heading-team {
   margin-bottom: 50px;
 }
@@ -309,6 +319,9 @@ header {
 
 .team-list-item {
   width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list-item:not(:last-child) {
@@ -316,9 +329,6 @@ header {
 }
 
 .team-list-item-textbox {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
   padding: 30px 0;
 }
 
@@ -468,6 +478,7 @@ header {
   cursor: pointer;
   border: 0;
   padding: 6px 22px;
+  background-color: #f5f4fa;
 }
 
 .buttons:hover,
@@ -484,6 +495,7 @@ header {
   flex-wrap: wrap;
   margin-right: calc(-1 * 30px);
   margin-bottom: calc(-1 * 30px);
+  margin-top: calc(-1 * 30px);
 }
 
 .portfolio-filter-box-list-item {
@@ -603,7 +615,7 @@ footer {
   width: 20px;
   height: 20px;
   display: block;
-  fill: #afb1b8;
+  fill: var(--hero-and-city-word-color);
 }
 
 .footer-list-icon-link:hover,
