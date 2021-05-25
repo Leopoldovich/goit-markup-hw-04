@@ -232,6 +232,8 @@ header {
   cursor: pointer;
   padding-top: 9px;
   padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .hero-button:hover,
